@@ -1,6 +1,13 @@
-Todo 
-  *Create base CSS config -- css-reset, fonts, colors, containers
-    -global classes for common styles & CSS modules for components
+Todo
+  Styles
+    *Create base CSS config -- css-reset, fonts, colors, containers
+      -global classes for common styles & CSS modules for components
+    *use fontsource to install/import fonts 
+      -create separate folder for fonts and import into index.js
 
-  *determine component granularity and folder structure -- smalller utility components -- cards, buttons, inputs etc. 
-    or larger components    
+  Components
+    *determine component granularity and folder structure 
+      -smalller utility components -- cards, buttons, inputs etc.
+      -or larger single use components  
+    
+    
