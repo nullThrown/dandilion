@@ -1,19 +1,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const {
-  requiredNum,
-  requiredStr,
-  requiredBool,
-  currentTime,
-} = require('../util/mongooseTypes');
+const { requiredStr, requiredBool } = require('../util/mongooseTypes');
 
+const CommentSchema = require('./Comments');
 const PostSchema = new Schema(
   {
     body: requiredStr,
     private: requiredBool,
-    comments: [],
+    comments: [CommentSchema],
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model('post', PostSchema);
+module.exports = PostSchema;
