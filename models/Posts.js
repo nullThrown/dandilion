@@ -6,8 +6,8 @@ const {
   requiredBool,
   currentTime,
 } = require('../util/mongooseTypes');
-
-const PostSchema = new Schema(
+import PostSchema from './Post';
+const PostsSchema = new Schema(
   {
     author: { type: Schema.Types.ObjectId, ref: 'user' },
     data: [PostSchema],
@@ -15,4 +15,4 @@ const PostSchema = new Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('post', PostSchema);
+module.exports = mongoose.model('post', PostsSchema);
