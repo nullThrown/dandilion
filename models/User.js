@@ -20,10 +20,12 @@ const UserSchema = new Schema(
     profilePhoto: requiredStr,
     posts: { type: Schema.Types.ObjectId, ref: 'posts' },
     friends: [{ type: Schema.Types.ObjectId, ref: 'user' }],
+    blockList: [{ type: Schema.Types.ObjectId, ref: 'user' }],
     settings: {
       distance: requiredNum,
       minAge: requiredNum,
       maxAge: requiredNum,
+      genderPreference: requiredStr,
     },
   },
   { timestamps: true }
