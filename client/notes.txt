@@ -1,0 +1,6 @@
+Todo 
+  *Create base CSS config -- css-reset, fonts, colors, containers
+    -global classes for common styles & CSS modules for components
+
+  *determine component granularity and folder structure -- smalller utility components -- cards, buttons, inputs etc. 
+    or larger components    
