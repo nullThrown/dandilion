@@ -1,5 +1,5 @@
 function App() {
-  return <h1>Welcome to Dandelion</h1>;
+  return <h1>Welcome to Dandilion</h1>;
 }
 
 export default App;
